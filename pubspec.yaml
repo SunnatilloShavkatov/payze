@@ -28,6 +28,3 @@ flutter:
         pluginClass: PayzePlugin
       ios:
         pluginClass: PayzePlugin
-      web:
-        pluginClass: PayzeWeb
-        fileName: payze_web.dart

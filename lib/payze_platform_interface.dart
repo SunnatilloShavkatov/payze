@@ -1,5 +1,6 @@
 import 'package:plugin_platform_interface/plugin_platform_interface.dart';
 
+import 'payze.dart';
 import 'payze_method_channel.dart';
 
 abstract class PayzePlatform extends PlatformInterface {
@@ -23,7 +24,9 @@ abstract class PayzePlatform extends PlatformInterface {
     _instance = instance;
   }
 
-  Future<String?> getPlatformVersion() {
+  Future<String?> pay({
+    required PayCard card,
+  }) {
     throw UnimplementedError('platformVersion() has not been implemented.');
   }
 }
